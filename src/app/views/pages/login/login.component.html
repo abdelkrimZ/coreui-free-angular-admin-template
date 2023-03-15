@@ -1,11 +1,11 @@
-<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center main-div">
   <c-container>
-    <c-row class="justify-content-center">
+    <c-row class="justify-content-center ">
       <c-col md="8">
         <c-card-group>
-          <c-card class="p-4">
-            <c-card-body>
-              <form cForm>
+          <c-card class="p-4 c-card1 ">
+            <c-card-body class="center-form">
+              <form cForm  >
                 <h1>Login</h1>
                 <p class="text-medium-emphasis">Sign In to your account</p>
                 <c-input-group class="mb-3">
@@ -27,7 +27,7 @@
                 </c-input-group>
                 <c-row>
                   <c-col xs="6">
-                    <button cButton class="px-4" color="primary">
+                    <button cButton class="px-4 bg-color-049DD9 " color="">
                       Login
                     </button>
                   </c-col>
@@ -40,15 +40,13 @@
               </form>
             </c-card-body>
           </c-card>
-          <c-card [ngStyle]="{'width.%': 44}" class="text-white bg-primary py-5">
-            <c-card-body class="text-center">
+          <c-card [ngStyle]="{'width.%': 4}" class=" py-5 second-card">
+            <c-card-body class="text-center ">
               <div>
-                <h2>Sign up</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
+                <img src="../../../../assets/img/avatars/logoNogBg.png" alt="fondation hassan 2" class="logo-fm2"/>
+                <p><b>Fondation Hassan 2</b> <br/>Consciente du rôle éminemment social qu'elle doit jouer et de l'importance de l'action sociale pour les adhérents de la Fondation
                 </p>
-                <button [active]="true" cButton class="mt-3" color="primary" routerLink="/register">
+                <button [active]="true" cButton class="c-card-button mt-3" routerLink="/register">
                   Register Now!
                 </button>
               </div>
