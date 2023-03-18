@@ -1,63 +1,84 @@
 <div class=" min-vh-100 d-flex flex-row align-items-center justify-content-center div-container">
-  <c-card-group class="min-vh-100 min-vw-100">
+  <c-card-group class="min-vh-100 min-vw-100 card-group">
 
-
-    <c-card  class="c-card1" >
-      <c-card-body class="c-card-body1">
-        <form cForm  >
-          <h1>Login</h1>
-          <p class="text-medium-emphasis">Sign In to your account</p>
-          <c-input-group class="mb-3">
-            <span cInputGroupText>
-              <svg cIcon name="cilUser"></svg>
-            </span>
-            <input autoComplete="username" cFormControl placeholder="Username" />
-          </c-input-group>
-          <c-input-group class="mb-4">
-            <span cInputGroupText>
-              <svg cIcon name="cilLockLocked"></svg>
-            </span>
-            <input
-              autoComplete="current-password"
-              cFormControl
-              placeholder="Password"
-              type="password"
-            />
-          </c-input-group>
-          <c-row>
-            <c-col xs="6">
-              <button cButton class="px-4 c-button " color="">
-                Login
-              </button>
-            </c-col>
-            <c-col class="text-right" xs="6">
-              <button cButton class="px-0" color="link">
-                Forgot password?
-              </button>
-            </c-col>
-          </c-row>
-        </form>
-      </c-card-body>
-    </c-card>
-
-
-    <c-card class=" c-card2">
-      <c-card-body class="c-card-body2">
-        <div>
-          <img src="../../../../assets/img/avatars/logoNogBg.png" alt="fondation hassan 2" />
-          <p><b>Fondation Hassan 2</b> <br/>Consciente du rôle éminemment social qu'elle doit jouer et de l'importance de l'action sociale pour les adhérents de la Fondation
+    <c-card class="card1">
+      <c-card-body class="card1-body fadeInLeft">
+          <img src="../../../../assets/img/avatars/logoNogBg.png" alt="fondation hassan 2"  class="fadeIn third"/>
+          <h3 class="fadeIn second"><b>Fondation Hassan 2</b></h3>
+          <p class="m-auto fadeIn first">Consciente du rôle éminemment social qu'elle doit jouer et de l'importance de l'action sociale pour les adhérents de la Fondation
           </p>
-        </div>
       </c-card-body>
     </c-card>
-  </c-card-group>
 
+    <c-card  class="card2" >
+      <c-card-body class="card2-body">
+
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <!-- Tabs Title -->
+            <h2 class="active"> Sign In </h2>
+            <!-- Login Form -->
+            <form>
+              <input type="text" id="login" class="fadeIn first" name="login" placeholder="Login">
+              <input type="text" id="password" class="fadeIn second" name="login" placeholder="password">
+              <input type="submit" class="fadeIn third" value="Log In">
+            </form>
+          </div>
+        </div>
+
+      </c-card-body>
+    </c-card>
+
+  </c-card-group>
 </div>
 
 
-  <!-- <c-container class="d-flex flex-row align-items-center justify-content-center"> -->
-    <!-- <c-row class="justify-content-center ">
-      <c-col md="8"> -->
-      <!-- </c-col>
-    </c-row> -->
-  <!-- </c-container> -->
+
+
+
+
+
+<!-- <form cForm class="card2-form" >
+  <h1 class="">Login</h1>
+  <c-input-group class="mb-3">
+    <span cInputGroupText>
+      <svg cIcon name="cilUser"></svg>
+    </span>
+    <input autoComplete="username" cFormControl placeholder="Username" />
+  </c-input-group>
+  <c-input-group class="mb-4">
+    <span cInputGroupText>
+      <svg cIcon name="cilLockLocked"></svg>
+    </span>
+    <input
+      autoComplete="current-password"
+      cFormControl
+      placeholder="Password"
+      type="password"
+    />
+  </c-input-group>
+  <c-row>
+    <c-col xs="6">
+      <button cButton class="px-4 c-button " color="">
+        Login
+      </button>
+    </c-col>
+    <c-col class="text-right" xs="6">
+      <button cButton class="px-0" color="link">
+        Forgot password?
+      </button>
+    </c-col>
+  </c-row>
+</form> -->
+
+
+
+
+
+
+<!-- <c-container class="d-flex flex-row align-items-center justify-content-center"> -->
+  <!-- <c-row class="justify-content-center ">
+    <c-col md="8"> -->
+    <!-- </c-col>
+  </c-row> -->
+<!-- </c-container> -->
